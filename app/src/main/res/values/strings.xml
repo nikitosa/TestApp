@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Test Application</string>
+
+    <!--activity_main strings-->
+    <string name="set_field">Set the size of the field:</string>
+    <string name="height_hint">height</string>
+    <string name="multip">x</string>
+    <string name="width_hint">width</string>
+    <string name="set_small">Set the number of small bricks:</string>
+    <string name="set_medium">Set the number of medium bricks:</string>
+    <string name="set_large">Set the number of large bricks:</string>
+    <string name="set_btn">Build the wall</string>
+
+    <!--activity_result strings-->
+    <string name="repeat_btn">Repeat</string>
+    <string name="gresult_btn">Graphic result </string>
+
+    <!--Results of building-->
+    <string name="positive_result">Wall can be constructed!</string>
+    <string name="negative_result">Wall can not be constructed. Not enough space for all bricks.</string>
+
+    <string name="toast_text">You must enter all values!</string>
+
+</resources>

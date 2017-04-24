@@ -2,23 +2,27 @@
     <string name="app_name">Test Application</string>
 
     <!--activity_main strings-->
-    <string name="set_field">Set the size of the field:</string>
+    <string name="set_field">Set size of the field:</string>
+    <string name="set_brick">Set size and number of bricks, and press add button to confirm:</string>
     <string name="height_hint">height</string>
     <string name="multip">x</string>
     <string name="width_hint">width</string>
-    <string name="set_small">Set the number of small bricks:</string>
-    <string name="set_medium">Set the number of medium bricks:</string>
-    <string name="set_large">Set the number of large bricks:</string>
+    <string name="height_text">Height:</string>
+    <string name="width_text">Width:</string>
+    <string name="number_text">Number:</string>
     <string name="set_btn">Build the wall</string>
+    <string name="add_bricks">Add bricks</string>
 
     <!--activity_result strings-->
     <string name="repeat_btn">Repeat</string>
     <string name="gresult_btn">Graphic result </string>
 
+
     <!--Results of building-->
     <string name="positive_result">Wall can be constructed!</string>
     <string name="negative_result">Wall can not be constructed. Not enough space for all bricks.</string>
 
-    <string name="toast_text">You must enter all values!</string>
+    <string name="toast_text1">You must enter all values!</string>
+    <string name="toast_text2">You must enter at least one brick!</string>
 
 </resources>

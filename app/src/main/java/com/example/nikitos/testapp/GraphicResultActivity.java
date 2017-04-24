@@ -3,6 +3,7 @@ package com.example.nikitos.testapp;
 import android.app.Activity;
 import android.os.Bundle;
 
+
 public class GraphicResultActivity extends Activity {
 
     private FieldClass field;
@@ -16,4 +17,5 @@ public class GraphicResultActivity extends Activity {
         pixelGrid.setNumColumns(field.getWidth());
         setContentView(pixelGrid);
     }
+
 }

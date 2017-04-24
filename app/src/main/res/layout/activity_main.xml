@@ -1,20 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
     android:orientation="vertical"
     tools:context="com.example.nikitos.testapp.MainActivity">
 
-    <TextView
-        android:id="@+id/set_field"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/set_brick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="21sp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/set_brick"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/table">
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/height_text"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/width_text"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/number_text"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textSize="21sp"
-        android:textColor="@color/colorBlack"
-        android:text="@string/set_field"
-        android:layout_gravity="center_horizontal"/>
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:id="@+id/set_brick_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:ems="5"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/set_brick_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:ems="5"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/set_brick_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:ems="5"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10"
+            android:inputType="number"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/set_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/set_field"
+            android:layout_gravity="center_horizontal"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,14 +122,14 @@
                 android:textSize="18sp"
                 android:ems="4"
                 android:gravity="center_horizontal"
-                android:hint="@string/height_hint"/>
+                android:hint="@string/height_hint" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/multip"
                 android:textColor="@color/colorBlack"
-                android:textSize="21sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/field_width"
@@ -49,76 +142,26 @@
                 android:hint="@string/width_hint"/>
         </LinearLayout>
 
-
-    <TextView
-        android:id="@+id/small_bricks_numb"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/add_brick"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textSize="21sp"
-        android:textColor="@color/colorBlack"
         android:layout_gravity="center_horizontal"
-        android:text="@string/set_small"/>
-    <EditText
-        android:id="@+id/set_small_bricks_numb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:ems="5"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-        android:inputType="number"/>
-
-
-    <TextView
-        android:id="@+id/medium_bricks_numb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="21sp"
-        android:textColor="@color/colorBlack"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/set_medium"/>
-    <EditText
-        android:id="@+id/set_medium_bricks_numb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:ems="5"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-        android:inputType="number"/>
-
-
-    <TextView
-        android:id="@+id/big_bricks_numb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="21sp"
-        android:textColor="@color/colorBlack"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/set_large"/>
-    <EditText
-        android:id="@+id/set_big_bricks_numb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:ems="5"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-        android:inputType="number"/>
+        android:background="@drawable/buttons"
+        android:text="@string/add_bricks"/>
 
     <Button
         android:id="@+id/set_arg"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:layout_gravity="center_horizontal"
         android:textSize="18sp"
         android:background="@drawable/buttons"
         android:text="@string/set_btn"/>
 
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -3,10 +3,10 @@ package com.example.nikitos.testapp;
 
 public class FieldClass {
 
-    private static int height;
-    private static int width;
+    public static int height;
+    public static int width;
 
-    private static int [][]field;
+    public static int [][]field;
 
     public int[][] getField() {
         return field;
@@ -32,3 +32,4 @@ public class FieldClass {
         return height;
     }
 }
+
